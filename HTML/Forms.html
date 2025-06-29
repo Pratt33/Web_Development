@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Examples</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Welcome!</h1>
+
+    <!-- Table-Only Login Form -->
+    <h2 style="text-align: center;">Login (Table Only - Not Functional)</h2>
+    <table style="width: 400px; border: 1px solid black; margin: 20px auto; padding: 10px; background-color: #f0f0f0; text-align: center; font-size: larger;">
+        <caption style="margin-bottom: 10px; font-weight: bold;">Table-Based Login</caption>
+        <tr>
+            <td><label for="t-username">Username:</label></td>
+            <td><input type="text" id="t-username" name="t-username"></td>
+        </tr>
+        <tr>
+            <td><label for="t-password">Password:</label></td>
+            <td><input type="password" id="t-password" name="t-password"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding-top: 10px;">
+                <button>Login</button>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Form Tag Login -->
+    <h2 style="text-align: center;">Login (Using Form Tag - Functional)</h2>
+    <form action="/login" method="post">
+        <table style="width: 400px; border: 1px solid black; margin: 20px auto; padding: 10px; background-color: lightgray; text-align: center; font-size: larger;">
+            <caption style="margin-bottom: 10px; font-weight: bold;">Form-Based Login</caption>
+            <tr>
+                <td><label for="username">Username:</label></td>
+                <td><input type="text" name="username" id="username" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" name="password" id="password" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding-top: 10px;">
+                    <button type="submit">Login</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
