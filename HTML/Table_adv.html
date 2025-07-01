@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table, tr, td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+            text-align: center;
+            margin: 80px auto;
+            font-size: larger;
+            caption-side: bottom;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption style="margin: 20px auto;">Sports Table</caption>
+        <colgroup>
+            <col span="1">
+            <col style="background-color: rgb(255, 240, 240);">
+            <col style="background-color: hsl(0, 100%, 97%);">
+            <col style="background-color: rgb(255, 255, 240);">
+            <col style="background-color: rgb(240, 255, 255);">
+        </colgroup>
+        <tr>
+            <th colspan="2">Country</th>
+            <th>Sport</th>
+            <th colspan="2">Trophies</th>
+        </tr>
+        <tr>
+            <td>Brazil</td>
+            <td>—</td>
+            <td>Football</td>
+            <td colspan="2" rowspan="2">5</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Germany</td>
+            <td>—</td>
+            <td>Football</td>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>Cricket</td>
+            <td colspan="2">2</td>
+        </tr>
+    </table>
+</body>
+</html>
