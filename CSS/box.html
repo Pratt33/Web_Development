@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+
+    h2 {
+      margin-top: 40px;
+    }
+
+    /* Flexbox boxes: A, B, C */
+    .box {
+      height: 100px;
+      width: 200px;
+      border: 5px solid black;
+      margin: 100px;
+      padding: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      font-weight: bold;
+      color: black;
+    }
+
+    #org {
+      background-color: orange;
+    }
+
+    #wht {
+      background-color: white;
+    }
+
+    #grn {
+      background-color: green;
+    }
+
+    /* Unit comparison boxes */
+    .unit-box {
+      background-color: lightblue;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #333;
+    }
+
+    /* Absolute Units */
+    .px-box {
+      width: 200px;
+    }
+
+    .cm-box {
+      width: 5cm;
+    }
+
+    .in-box {
+      width: 2in;
+    }
+
+    .pt-box {
+      width: 100pt;
+    }
+
+    /* Relative Units */
+    .em-box {
+      width: 20em;
+    }
+
+    .rem-box {
+      width: 20rem;
+    }
+
+    .percent-box {
+      width: 50%;
+    }
+
+    .vw-box {
+      width: 50vw;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Flag-like boxes -->
+  <div class="box" id="org">A</div>
+  <div class="box" id="wht">B</div>
+  <div class="box" id="grn">C</div>
+
+  <!-- Unit Comparison Boxes -->
+  <h2>Absolute Units</h2>
+  <div class="unit-box px-box">200px width</div>
+  <div class="unit-box cm-box">5cm width</div>
+  <div class="unit-box in-box">2in width</div>
+  <div class="unit-box pt-box">100pt width</div>
+
+  <h2>Relative Units</h2>
+  <div class="unit-box em-box">20em width (relative to parent font-size)</div>
+  <div class="unit-box rem-box">20rem width (relative to root font-size(html))</div>
+  <div class="unit-box percent-box">50% width (relative to parent element)</div>
+  <div class="unit-box vw-box">50vw width (50% of viewport width)</div>
+</body>
+</html>
