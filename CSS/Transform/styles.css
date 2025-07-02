@@ -1,0 +1,34 @@
+body {
+    padding: 50px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.transform-container {
+    margin: 200px auto;
+    width: fit-content;
+}
+
+div {
+    background-color: lightblue;
+    padding: 20px;
+    border: 1px solid #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+    /* All transform examples (only the last one will apply) */
+    transform: translate(400px, 150px);
+    transform: rotate(-45deg);
+    transform: scale(5, 5);
+    transform: skew(-45deg);
+    transform: matrix(1, 0.5, 0.5, 1, 0, 0);
+    
+    display: inline-block;
+}
+
+.controls {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}

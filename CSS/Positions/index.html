@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning: Relative</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="note">
+        <strong>Note:</strong> HTML elements by default have a position of static.
+    </div>
+    
+    <p>relative: The element is positioned relative to its normal position.</p>
+    
+    <p>Normal flow content before the positioned element.</p>
+    
+    <div class="relative">This is a relative positioned element (moved 20px down and 40px right from its normal position).</div>
+    
+    <p>Normal flow content after the positioned element.</p>
+    
+    <div class="explanation">
+        <h3>How Relative Positioning Works:</h3>
+        <ul>
+            <li>Element is first laid out in normal flow</li>
+            <li>Then offset relative to itself using top, bottom, left, right properties</li>
+            <li>Original space in document flow is preserved</li>
+            <li>Doesn't affect position of other elements</li>
+        </ul>
+    </div>
+</body>
+</html>

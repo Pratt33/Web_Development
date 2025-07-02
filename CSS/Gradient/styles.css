@@ -1,0 +1,40 @@
+.box {
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    margin: 20px;
+    /* All linear gradient variations (last one will apply) */
+    background-image: linear-gradient(red, yellow);
+    background-image: linear-gradient(to right, red, yellow);
+    background-image: linear-gradient(to bottom right, red, yellow, green);
+    background-image: linear-gradient(210deg, red, yellow, green);
+    background-image: linear-gradient(rgba(255, 0, 0, 0.6), rgba(255, 255, 0, 0.1), rgba(0, 255, 0, 0.6));
+    background-image: linear-gradient(rgb(255, 102, 0), rgb(255, 255, 255), rgba(0, 255, 0, 0.6));
+}
+        
+.mydiv {
+    border: 1px solid black;
+    height: 250px;
+    width: 200px;
+    margin: 30px;
+    /* All radial gradient variations (last one will apply) */
+    background-image: radial-gradient(red, yellow);
+    background-image: radial-gradient(red, yellow, green);
+    background-image: radial-gradient(circle, red, yellow, green);
+    background-image: radial-gradient(ellipse, red, yellow, green);
+    background-image: radial-gradient(red 25%, yellow 70%, green 5%);
+    background-image: radial-gradient(circle at 25% 50%, red, yellow, green);
+    background-image: radial-gradient(to bottom right, red, yellow, green);
+}
+
+.mydiv2 {
+    border: 1px solid black;
+    height: 300px;
+    width: 250px;
+    margin: 40px;
+    /* All conic gradient variations (last one will apply) */
+    background-image: conic-gradient(red, yellow);
+    background-image: conic-gradient(red, yellow, green);
+    background-image: conic-gradient(from 0deg, red, yellow, green);
+    background-image: conic-gradient(from 90deg at 50% 50%, red, yellow, green);
+}

@@ -1,0 +1,30 @@
+h1 {
+    /* Multiple text shadows (only the second one will apply) */
+    text-shadow: 3px 3px 5px red;
+    text-shadow: 3px 3px 3px red, 
+                    5px 5px 5px blue;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.box {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    /* Multiple box shadows */
+    box-shadow: 10px 10px 10px green, 
+                -15px -15px 15px brown;
+    color: chocolate;
+    margin: 40px auto; /* Centered */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 8px; /* Softened edges */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}

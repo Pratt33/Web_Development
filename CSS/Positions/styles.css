@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.note {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-left: 4px solid #4285f4;
+    margin-bottom: 20px;
+}
+
+.relative {
+    position: relative;
+    top: 20px;
+    left: 40px;
+    background-color: lightblue;
+    padding: 15px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    width: fit-content;
+}
+
+.explanation {
+    background-color: #e8f4f8;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 4px;
+}
