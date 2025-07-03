@@ -1,0 +1,37 @@
+.conta {
+    background-color: brown;
+    height: 500px;
+    border: 3px solid black;
+    display: grid;
+
+    grid-template-columns: 150px repeat(3, 1fr);
+    grid-template-rows: 30px 100px 90px 30px;
+    gap: 3px;
+}
+
+.box {
+    background-color: aqua;
+    border: 3px solid black;
+}
+
+/* Full-width header and footer boxes */
+#box1,
+#box4 {
+    grid-column: 1 / 5;
+}
+
+/* Left-side tall box */
+#box2 {
+    grid-row: 2 / 4;
+}
+
+/* Center tall box */
+#box3 {
+    grid-row: 2 / 4;
+    grid-column: 2 / 4;
+}
+
+/* Right-side tall box */
+#box5 {
+    grid-row: 2 / 4;
+}
