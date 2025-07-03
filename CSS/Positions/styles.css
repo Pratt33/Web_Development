@@ -1,32 +1,39 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+/*p {
+    position: static; /* Default (flow-based) position
+}
+*/
+
+div {
+    width: 80px;
+    height: 80px;
+    background-color: aqua;
+    border: 1px solid black;
+    display: inline-block;
 }
 
-.note {
-    background-color: #f8f9fa;
-    padding: 15px;
-    border-left: 4px solid #4285f4;
-    margin-bottom: 20px;
+.wrapper {
+    width: 500vw;
+    height: 2000px;
+    background-color: yellow;
 }
 
-.relative {
-    position: relative;
+/*.box1 {
+    position: fixed; /* Fixed relative to viewport
+}
+*/
+
+/*.box2 {
+    Default inline-block box for layout testing
+}*/
+
+.box3 {
+    position: absolute; /* Positioned relative to nearest positioned ancestor */
+    /* If no positioned ancestor, it defaults to <body> */
     top: 20px;
-    left: 40px;
-    background-color: lightblue;
-    padding: 15px;
-    border: 1px solid #333;
-    border-radius: 4px;
-    width: fit-content;
+    left: 20px;
 }
 
-.explanation {
-    background-color: #e8f4f8;
-    padding: 15px;
-    margin-top: 30px;
-    border-radius: 4px;
+.box4 {
+    position: sticky; /* Sticks to top during scroll */
+    top: 0;
 }
