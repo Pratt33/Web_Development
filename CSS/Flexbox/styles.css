@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    height: 400px;
+    border: 2px solid green;
+    display: flex;
+    
+    /* Flex behavior */
+    flex-direction: row;
+    flex-wrap: wrap; /* Wrap items to the next line if needed */
+    /* shorthand: flex-flow: row wrap; */
+
+    /* Main axis alignment (horizontal in row direction) */
+    justify-content: space-evenly;
+
+    /* Cross axis alignment (vertical in row direction) */
+    align-items: stretch;
+
+    /* If multiple rows exist, aligns rows vertically */
+    align-content: space-evenly;
+
+    /* align-self is meant for individual items, not the container */
+}
+
+.box {
+    border: 1px solid brown;
+    background-color: aqua;
+
+    /* Try flex-basis to give initial size instead of fixed width */
+    /* flex-basis: 100px; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+}
+
+/* Specific item overrides */
+#box1 {
+    order: 1;
+    /* flex-grow: 1; */
+    /* flex-shrink: 4; */
+}
+
+#box2 {
+    order: 2;
+    /* align-self: stretch; */
+}
+
+#box3 {
+    order: 2;
+    /* align-self: flex-start; */
+}
