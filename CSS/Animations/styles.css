@@ -1,0 +1,57 @@
+.conta {
+    border: 2px solid red;
+    background-color: yellow;
+    height: 215px;
+    width: 100%;
+}
+
+.box {
+    border: 2px solid green;
+    background-color: aqua;
+    height: 212px;
+    width: 212px;
+
+    /* Animation properties */
+    animation-name: anime;                /* Specifies the animation to use */
+    animation-duration: 3s;              /* Duration of the animation */
+    animation-iteration-count: 1;        /* Number of times the animation should repeat */
+    animation-delay: 1s;                 /* Delay before the animation starts */
+    animation-direction: alternate;      /* Reverses animation on every cycle */
+    animation-fill-mode: forwards;       /* Keeps final state of animation after completion */
+}
+
+/* Keyframes define intermediate steps of the animation */
+@keyframes anime {
+    0% {
+        width: 212px;
+        background-color: aqua;
+    }
+
+    30% {
+        width: 35%; /* Removed 'px' after '%' (invalid syntax) */
+        background-color: aquamarine;
+    }
+
+    65% {
+        width: 70%;
+        background-color: blue;
+    }
+
+    100% {
+        width: 100%;
+        background-color: blueviolet;
+    }
+}
+
+/*
+Alternative syntax using from...to:
+
+@keyframes anime {
+    from {
+        width: 212px;
+    }
+    to {
+        width: 100%;
+    }
+}
+*/
