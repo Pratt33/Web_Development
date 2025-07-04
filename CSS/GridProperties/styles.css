@@ -1,0 +1,50 @@
+.conta {
+    border: 1px solid brown;
+    background-color: yellow;
+    height: 700px;
+    width: 600px;
+
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+
+    /* grid-gap: 10px; */
+
+    /* Horizontal alignment of entire grid inside container */
+    justify-content: center;
+    /* Vertical alignment of entire grid inside container */
+    align-content: center;
+
+    /* Additional experimental options*/
+    
+    /* justify-content: start;   All content aligns to the left */
+    /* justify-content: end;     All content aligns to the right */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+
+    /* align-items: start;       Items stick to the top of each grid cell */
+    /* align-items: stretch;     Items stretch to fill vertical space */
+
+    /* align-content: space-evenly; Even vertical spacing of entire grid */
+
+    /* place-items: center;      Shorthand for align-items + justify-items */
+    /* place-content: center;    Shorthand for align-content + justify-content */
+}
+
+.box {
+    border: 1px solid red;
+    background-color: aqua;
+}
+
+/* Individual box alignment overrides */
+#box1 {
+    /* Horizontal alignment inside its grid cell */
+    /* justify-self: start;  Aligns box to left edge of its grid cell */
+    /* justify-self: end;    Aligns box to right edge */
+    /* justify-self: center; Centers horizontally */
+
+    /* Vertical alignment inside its grid cell */
+    /* align-self: start;    Aligns box to top edge */
+    /* align-self: center;   Centers vertically */
+}
