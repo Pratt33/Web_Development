@@ -1,0 +1,44 @@
+.conta {
+    border: 1px solid black;
+    background-color: yellow;
+    height: 700px;
+    width: 504px;
+
+    display: grid;
+
+    /* 3 rows: header (30px), main (flexible), footer (30px) */
+    grid-template-rows: 30px 1fr 30px;
+
+    /* Auto columns: sidebar (100px), content (400px) */
+    grid-auto-columns: 100px 400px;
+
+    grid-gap: 4px;
+
+    /* Layout using named grid areas */
+    grid-template-areas: 
+        "hd hd"
+        "side main"
+        "ft ft";
+}
+
+.box {
+    border: 1px solid red;
+    background-color: aqua;
+}
+
+/* Assigning grid areas */
+#header {
+    grid-area: hd;
+}
+
+#footer {
+    grid-area: ft;
+}
+
+#sidebar {
+    grid-area: side;
+}
+
+#content {
+    grid-area: main;
+}
