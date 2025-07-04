@@ -1,0 +1,37 @@
+.conta {
+    border: 3px solid red;
+    height: 500px;
+    width: 500px;
+    background-color: green;
+    display: flex;
+}
+
+.box {
+    border: 2px solid orange;
+    background-color: aqua;
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+
+    /* Transition settings */
+    /* transition: 1s; */
+
+    /* Only apply transition on background-color */
+    /* transition-property: background-color; */
+    /* transition-delay: 5s; */
+
+    /* Full transition shorthand: property, duration, easing function, delay */
+    /* transition: transform 15s ease 1s; */
+
+    /* transition: transform 0.3s cubic-bezier(1,-0.34, 0, 1.32); */
+
+    transition-property: transform;
+    transition-duration: 3s;              /* Time taken to complete the transformation */
+    transition-timing-function: ease;     /* Defines the speed curve of the transition */
+    transition-delay: 1s;                 /* Delay before transition starts */
+}
+
+.box:hover {
+    background-color: brown;
+    transform: translateX(501px) rotate(360deg);
+}
