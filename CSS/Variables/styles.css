@@ -1,0 +1,21 @@
+:root {
+    --dark-red: #981a2c; /* Global variable: can be accessed anywhere */
+}
+
+.conta {
+    border: 1px solid brown;
+    background-color: var(--dark-red); /* Using global variable */
+    height: 300px;
+    width: 300px;
+}
+
+.box {
+    border: 2px solid green;
+    background-color: aqua;
+
+    /* Local variable defined only for .box elements */
+    --dark-red: #981a2c;
+
+    /* Using local variable (will override global if available) */
+    color: var(--dark-red);
+}
