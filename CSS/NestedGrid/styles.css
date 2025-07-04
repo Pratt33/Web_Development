@@ -50,17 +50,18 @@
     grid-area: main;
 }
 
-/* Media Query: Responsive layout for small screens */
-@media (max-width: 350px) {
-    .conta {
-        grid-template-rows: 30px 1fr 1fr 30px;
-        grid-template-columns: 1fr;
-        grid-gap: 2px;
+/* Nested Grid inside Content */
+.childgrid {
+    height: 100%;
+    width: 100%;
+    display: grid;
 
-        grid-template-areas: 
-            "hd"
-            "side"
-            "main"
-            "ft";
-    }
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.element {
+    border: 2px solid green;
+    background-color: hotpink;
 }
