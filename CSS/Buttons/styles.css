@@ -1,0 +1,48 @@
+/* Resets default spacing and makes sizing include padding and border */
+* {
+    margin: 0;                 /* Removes default outer spacing */
+    padding: 0;                /* Removes default inner spacing */
+    box-sizing: border-box;   /* Ensures padding and border are included in width/height */
+}
+
+/* Centers the button vertically and horizontally on full screen */
+.wrapper {
+    height: 100vh;             /* Makes wrapper height equal to full viewport height */
+    width: 100%;               /* Full width of the parent (usually the body) */
+    display: flex;             /* Enables Flexbox layout */
+    justify-content: center;  /* Centers content horizontally */
+    align-items: center;      /* Centers content vertically */
+}
+
+/* Styles the "Hire Me" button */
+.btn-pink {
+    background-color: #e84949;             /* Sets the button's background to pinkish-red */
+    padding: 0.8rem 2.3rem;                /* Adds spacing inside button (top/bottom, left/right) */
+    color: white;                          /* Sets the text color to white */
+    font-size: 18px;                       /* Increases font size for better readability */
+    box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.25); /* Adds a soft shadow for 3D effect */
+    position: relative;                    /* Allows absolutely positioned child (pseudo-element) */
+    z-index: 1;                            /* Places button above its pseudo-element background */
+    border: none;                          /* Removes default button border */
+    cursor: pointer;                       /* Changes cursor to pointer on hover */
+}
+
+/* Creates animated background effect for button */
+.btn-pink::before {
+    content: "";                           /* Generates an empty pseudo-element */
+    background-color: #1f1f1f;             /* Dark background for the hover effect */
+    position: absolute;                    /* Positions relative to .btn-pink */
+    top: 0;                                /* Aligns to top edge of button */
+    left: 0;                               /* Aligns to left edge */
+    right: 0;                              /* Aligns to right edge */
+    bottom: 0;                             /* Aligns to bottom edge */
+    transform: scaleX(0);                  /* Collapses width to 0 initially (hidden) */
+    transform-origin: left;                /* Makes the scale animation start from the left */
+    transition: transform 0.8s ease;       /* Smoothly animates the scale transform */
+    z-index: -1;                           /* Sends it behind the button text */
+}
+
+/* Expands the dark background on hover */
+.btn-pink:hover::before {
+    transform: scaleX(1);                  /* Fully expands the background from left to right */
+}
